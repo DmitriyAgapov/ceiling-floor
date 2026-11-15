@@ -64,7 +64,7 @@ export default function Website(){
    <div className="service-strip wrap"><span><Droplets/>Слив воды после залива</span><span><Scissors/>Порезы и разрывы</span><span><RefreshCw/>Восстановление полотна</span><span><Sparkles/>Монтаж нового потолка</span></div>
 
    <section className="section wrap" id="services">
-    <div className="section-top"><div><p className="eyebrow">01 / ЧЕМ ПОМОЖЕМ</p><h2>У каждой проблемы<br/>есть <span className="serif">своё решение.</span></h2></div><p className="section-intro">Делаем акцент на ремонте.<br/>Сначала проверим, можно ли сохранить<br className="desktop-break"/> ваш потолок, и предложим варианты.</p></div>
+    <div className="section-top"><div><p className="eyebrow">01 / ЧЕМ ПОМОЖЕМ</p><h2>У каждой проблемы<br/>есть <span className="serif">своё решение.</span></h2></div></div>
     <div className="services-grid">{services.map(s=>{const Icon=icons[s.icon as keyof typeof icons];return <button className="service-card" key={s.id} onClick={()=>setActive(s)} aria-label={`Подробнее: ${s.title}`}><div className="service-card-top"><span className="service-icon"><Icon size={28} strokeWidth={1.5}/></span><span className="card-number">/{s.number}</span></div><h3>{s.title}</h3><p>{s.description}</p><span className="card-bottom"><span>{s.tag}</span><ArrowUpRight size={23}/></span></button>})}</div>
    </section>
 
