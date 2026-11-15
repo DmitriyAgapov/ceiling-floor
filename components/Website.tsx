@@ -58,7 +58,7 @@ export default function Website(){
       <div className="hero-story-caption" aria-live="polite"><span className="hero-story-icon">{heroView==='problem'?<Droplets size={25}/>:<Check size={25}/>}</span><div><span className="tiny-label">{hero[heroView].label}</span><h2>{hero[heroView].title}</h2><p>{hero[heroView].description}</p></div><button className="hero-next-scene" onClick={()=>setHeroView(heroView==='problem'?'solution':'problem')} aria-label={heroView==='problem'?'Показать возможный результат':'Показать проблему'}><ArrowUpRight size={24}/></button></div>
       <span className="hero-image-label">{hero.imageLabel}</span>
      </div>
-     <div className="hero-story-footer"><span className="hero-scenario-line"><span>Проблема</span><ArrowRight size={17}/><span>Решение</span></span><p>{hero.note}</p></div>
+
     </div>
    </section>
    <div className="service-strip wrap"><span><Droplets/>Слив воды после залива</span><span><Scissors/>Порезы и разрывы</span><span><RefreshCw/>Восстановление полотна</span><span><Sparkles/>Монтаж нового потолка</span></div>
